@@ -1,6 +1,6 @@
 {
   "name": "stylus-px2rem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stylus convert px to rem in css files with optional fallback to px.",
   "main": "lib/px2rem.js",
   "scripts": {
