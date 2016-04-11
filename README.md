@@ -64,6 +64,7 @@ Partial convert
 @import 'node_modules/stylus-px2rem/lib/padding'
 @import 'node_modules/stylus-px2rem/lib/width'
 @import 'node_modules/stylus-px2rem/lib/height'
+@import 'node_modules/stylus-px2rem/lib/line-height'
 
 html-font-size = 10px;
 

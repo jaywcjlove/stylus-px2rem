@@ -8,7 +8,7 @@ html-font-size ?= 10px;
 px2rem(prop,values){
     values-px = null;
     values-rem = null;
-    need_normalize = !prop in ('width' 'height' 'border' 'margin' 'margin-top' 'margin-bottom' 'margin-left' 'margin-right' 'padding' 'padding-left' 'padding-right' 'padding-bottom' 'padding-top')
+    need_normalize = !prop in ('width' 'height' 'border' 'margin' 'margin-top' 'margin-bottom' 'margin-left' 'margin-right' 'padding' 'padding-left' 'padding-right' 'padding-bottom' 'padding-top' 'line-height')
     for value in values {
         if (typeof(value) == 'unit' && value != 0) {
             if(!need_normalize){
