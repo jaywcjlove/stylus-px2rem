@@ -5,12 +5,15 @@
     设置html的字体大小 font-size =10px 那么此时 1rem = 10px
 */
 html-font-size ?= 10px;
+style-names ?= width height border margin margin-top margin-bottom margin-left margin-right padding padding-left padding-right padding-bottom padding-top line-height;
+
 px2rem(prop,values){
     values-px = null;
     values-rem = null;
-    need_normalize = !prop in ('width' 'height' 'border' 'margin' 'margin-top' 'margin-bottom' 'margin-left' 'margin-right' 'padding' 'padding-left' 'padding-right' 'padding-bottom' 'padding-top' 'line-height')
+    need_normalize = !prop in style-names
     for value in values {
-        if (typeof(value) == 'unit' && value != 0) {
+        //match('-gradient\(', ''+arguments)
+        if (typeof(value) == 'unit' && value != 0 && match('px$',''+value)) {
             if(!need_normalize){
                 value-rem = unit(value / 16,'rem');
             }else{
