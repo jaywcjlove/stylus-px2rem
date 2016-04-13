@@ -19,7 +19,7 @@ Once the plugin has been installed, it may be you can make your "Stylus" run `xx
 Input
 
 ```css
-@import "node_modules/stylus-px2rem"
+@import "stylus-px2rem"
 div 
     margin 24px 24px
     font-size 14px
@@ -45,7 +45,7 @@ div{
 Full convert, `html-font-size` default `10px`, You Can set it up.
 
 ```css 
-@import "node_modules/stylus-px2rem"
+@import "stylus-px2rem"
 div 
     margin 24px 24px
     font-size 14px
@@ -73,6 +73,19 @@ div
     padding-bottom 12px
     width 100px
     height 100%
+```
+
+You can include `stylus-px2rem` as a normal stylus plugin. Basic example below:
+
+```js
+var stylus = require('stylus');
+var px2rem = require('stylus-px2rem');
+
+stylus(css)
+  .use(px2rem())
+  .render(function(err, output){
+    console.log(output);
+  });
 ```
 
 ## With Gulp Use
@@ -118,6 +131,11 @@ index.styl
 
 ```css
 @import "stylus-px2rem"
+/* or Partial convert */
+@import 'stylus-px2rem/mixins'
+@import 'stylus-px2rem/font-size'
+@import 'stylus-px2rem/border'
+@import 'stylus-px2rem/margin'
 ```
 
 
