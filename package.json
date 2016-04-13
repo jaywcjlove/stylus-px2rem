@@ -1,6 +1,6 @@
 {
   "name": "stylus-px2rem",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stylus convert px to rem in css files with optional fallback to px.",
   "main": "lib/px2rem.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "px"
   ],
   "author": "kenny wang <398188662@qq.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "stylus": "^0.54.2"
   }
