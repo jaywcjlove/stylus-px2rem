@@ -57,15 +57,14 @@ div
 Partial convert
 
 ```css 
-@import 'node_modules/stylus-px2rem/lib/mixins'
-@import 'node_modules/stylus-px2rem/lib/font-size'
-@import 'node_modules/stylus-px2rem/lib/border'
-@import 'node_modules/stylus-px2rem/lib/margin'
-@import 'node_modules/stylus-px2rem/lib/padding'
-@import 'node_modules/stylus-px2rem/lib/width'
-@import 'node_modules/stylus-px2rem/lib/height'
-@import 'node_modules/stylus-px2rem/lib/line-height'
-
+@import 'stylus-px2rem/mixins'
+@import 'stylus-px2rem/font-size'
+@import 'stylus-px2rem/border'
+@import 'stylus-px2rem/margin'
+@import 'stylus-px2rem/padding'
+@import 'stylus-px2rem/width'
+@import 'stylus-px2rem/height'
+@import 'stylus-px2rem/line-height'
 html-font-size = 10px;
 
 div 
@@ -76,3 +75,60 @@ div
     height 100%
 ```
 
+## With Gulp Use
+
+With `Gulp` Use `stylus-px2rem`, Add `px2rem()` in `use`.
+
+```js
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+var stylus = require('gulp-stylus');
+var px2rem = require('stylus-px2rem');
+var autoprefixer = require('gulp-autoprefixer');
+var browserslist = ['Android 2.3', 'Android >= 4', 'Chrome >= 20', 'Firefox >= 24', 'Explorer >= 8', 'iOS >= 6', 'Opera >= 12', 'Safari >= 6'];
+gulp.src('./public/styl/*.styl')
+    .pipe(stylus({
+        use:[px2rem()],
+        compress:true
+    }))
+    .pipe(autoprefixer({
+        browsers: browserslist,
+        cascade: false
+    }).on('error',gutil.log))
+    .pipe(gulp.dest('./public/css'));
+```
+index.styl
+
+```css
+@import 'stylus-px2rem'
+.banner{
+    height 140px
+    font-size 24px
+}
+```
+
+
+## With Plugin Use 
+
+```bash
+stylus -u stylus-px2rem index.styl
+```
+
+index.styl
+
+```css
+@import "stylus-px2rem"
+```
+
+
+
+```css
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/mixins'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/font-size'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/border'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/margin'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/padding'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/width'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/height'
+@import 'node_modules/stylus-px2rem/lib/stylus-px2rem/line-height'
+```
