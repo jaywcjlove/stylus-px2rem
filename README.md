@@ -62,6 +62,10 @@ Partial convert
 @import 'stylus-px2rem/border'
 @import 'stylus-px2rem/margin'
 @import 'stylus-px2rem/padding'
+@import 'stylus-px2rem/top'
+@import 'stylus-px2rem/left'
+@import 'stylus-px2rem/right'
+@import 'stylus-px2rem/bottom'
 @import 'stylus-px2rem/width'
 @import 'stylus-px2rem/height'
 @import 'stylus-px2rem/line-height'
@@ -110,6 +114,7 @@ gulp.src('./public/styl/*.styl')
     }).on('error',gutil.log))
     .pipe(gulp.dest('./public/css'));
 ```
+
 index.styl
 
 ```css
