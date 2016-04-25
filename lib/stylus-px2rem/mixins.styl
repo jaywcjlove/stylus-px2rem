@@ -5,7 +5,8 @@
     设置html的字体大小 font-size =10px 那么此时 1rem = 10px
 */
 html-font-size ?= 10px;
-style-names ?= width height border margin margin-top margin-bottom margin-left margin-right padding padding-left padding-right padding-bottom padding-top line-height;
+// style-names ?= width height min-height max-height min-width max-width border margin margin-top margin-bottom margin-left margin-right padding padding-left padding-right padding-bottom padding-top line-height;
+style-names ?= "min-height" "max-height" "min-width" "max-width" "width" "height" "border" "margin" "margin-top" "margin-bottom" "margin-left" "margin-right" "padding" "padding-left" "padding-right" "padding-bottom" "padding-top" "line-height"
 
 px2rem(prop,values){
     values-px = null;
