@@ -42,7 +42,7 @@ div{
 
 ## Example Usage
 
-Full convert, `html-font-size` default `10px`, You Can set it up.
+Full convert, `html-font-size` default `10px`, You Can set it up. This setting will not be converted `font-size 10px!important`. 
 
 ```css 
 @import "stylus-px2rem"
