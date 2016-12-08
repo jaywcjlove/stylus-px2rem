@@ -14,6 +14,10 @@ npm install stylus-px2rem --save-dev
 
 Once the plugin has been installed, it may be you can make your "Stylus" run `xx.styl` it output `CSS`:
 
+# Note
+
+`1px` will be ignored for experience, you can override it with define your number named `px2rem_ignore_limit`.
+
 ## Input/Output
 
 Input
