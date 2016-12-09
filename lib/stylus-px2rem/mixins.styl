@@ -17,7 +17,7 @@ px2rem(prop,values){
     for value in values {
         //match('-gradient\(', ''+arguments)
         if (typeof(value) == 'unit' && value != 0 && match('px$',''+value)) {
-            if(value <= px2rem_ignore_limit){
+            if(abs(value) <= px2rem_ignore_limit){
                 value-rem = value;
             }else if(!need_normalize){
                 value-rem = unit(value / 16,'rem');
