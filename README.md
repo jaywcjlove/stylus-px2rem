@@ -111,16 +111,20 @@ var stylus = require('gulp-stylus');
 var px2rem = require('stylus-px2rem');
 var autoprefixer = require('gulp-autoprefixer');
 var browserslist = ['Android 2.3', 'Android >= 4', 'Chrome >= 20', 'Firefox >= 24', 'Explorer >= 8', 'iOS >= 6', 'Opera >= 12', 'Safari >= 6'];
-gulp.src('./public/styl/*.styl')
-    .pipe(stylus({
-        use:[px2rem()],
-        compress:true
-    }))
-    .pipe(autoprefixer({
-        browsers: browserslist,
-        cascade: false
-    }).on('error',gutil.log))
-    .pipe(gulp.dest('./public/css'));
+
+
+gulp.task('default', function() {
+    gulp.src('./public/styl/*.styl')
+        .pipe(stylus({
+            use:[px2rem()],
+            compress:true
+        }))
+        .pipe(autoprefixer({
+            browsers: browserslist,
+            cascade: false
+        }).on('error',gutil.log))
+        .pipe(gulp.dest('./public/css'));
+});
 ```
 
 index.styl
