@@ -18,7 +18,7 @@ Once the plugin has been installed, it may be you can make your "Stylus" run `xx
 
 1. `1px` will be ignored for experience, you can override it with define your number named `px2rem_ignore_limit`.
 
-2. If you want to preserve px value in some case(html element for example), use `font-size '16px!'`, and also you can override `preserve_px` to '_px'(then `font-size '16_px'`) or something else.
+2. If you want to preserve px value in some case(html element for example), use quote like `font-size '16px'`.
 
 ## Input/Output
 
