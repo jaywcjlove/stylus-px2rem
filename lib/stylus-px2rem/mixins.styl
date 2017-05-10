@@ -10,7 +10,7 @@ html-font-size ?= 16px;
 style-names ?= "min-height" "max-height" "min-width" "max-width" "width" "height" "border" "margin" "margin-top" "margin-bottom" "margin-left" "margin-right" "padding" "padding-left" "padding-right" "padding-bottom" "padding-top" "line-height"
 // value less then ignore_limit will be ignored and return the original value
 px2rem_ignore_limit ?= 1
-// if you want to preserve px value in some case(html element for example), use `fontsize '16px!'`, and also you can override preserve_px to '_px'(then `fontsize '16_px'`) or something else
+// if you want to preserve px value in some case(html element for example), use `font-size '16px!'`, and also you can override preserve_px to '_px'(then `font-size '16_px'`) or something else
 preserve_px ?= 'px!'
 
 px2rem(prop,values){
