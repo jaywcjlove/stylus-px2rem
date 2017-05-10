@@ -1,0 +1,13 @@
+.border{
+  border-right:0.75rem;
+  border:0.75rem;
+  border-top:0.75rem;
+  border-right:0.75rem;
+  border-bottom:0.75rem;
+  border-left:0.75rem;
+  border-radius:0.75rem;
+  border-top-left-radius:0.75rem;
+  border-top-right-radius:0.75rem;
+  border-bottom-left-radius:0.75rem;
+  border-bottom-right-radius:0.75rem;
+}
