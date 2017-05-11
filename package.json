@@ -18,10 +18,10 @@
   "author": "kenny wang <398188662@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "mocha": "^3.3.0",
     "stylus": "^0.54.2"
   },
   "devDependencies": {
+    "mocha": "^3.3.0",
     "should": "^11.2.1"
   }
 }
