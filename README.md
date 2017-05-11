@@ -1,6 +1,6 @@
 # stylus-px2rem
 
-[![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/stylus-px2rem) [![](https://jaywcjlove.github.io/sb/ico/stylus.svg)](http://stylus-lang.com/)
+[![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/stylus-px2rem) [![](https://jaywcjlove.github.io/sb/ico/stylus.svg)](http://stylus-lang.com/) [![Build Status](https://travis-ci.org/ride-css/ride-css.svg)](https://github.com/jaywcjlove/stylus-px2rem)
 
 stylus convert px to rem in css files with optional fallback to px.
 
