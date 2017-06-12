@@ -26,7 +26,7 @@ px2rem(prop,values){
             }
             push(values-rem,value-rem)
         } else {
-            push(values-rem,match('px$',''+value) ? unquote(value) : value)
+            push(values-rem,value!=0 && match('px$',''+value) ? unquote(value) : value);
         }
     }
     {prop} : values-rem;
