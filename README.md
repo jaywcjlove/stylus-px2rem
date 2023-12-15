@@ -1,6 +1,9 @@
 # stylus-px2rem
 
-[![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/stylus-px2rem) [![](https://jaywcjlove.github.io/sb/ico/stylus.svg)](http://stylus-lang.com/) [![Build Status](https://travis-ci.org/ride-css/ride-css.svg)](https://github.com/jaywcjlove/stylus-px2rem)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
+[![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/stylus-px2rem)
+[![](https://jaywcjlove.github.io/sb/ico/stylus.svg)](http://stylus-lang.com/)
+[![Build Status](https://travis-ci.org/ride-css/ride-css.svg)](https://github.com/jaywcjlove/stylus-px2rem)
 
 stylus convert px to rem in css files with optional fallback to px.
 
@@ -169,3 +172,18 @@ index.styl
 @import 'node_modules/stylus-px2rem/lib/stylus-px2rem/height'
 @import 'node_modules/stylus-px2rem/lib/stylus-px2rem/line-height'
 ```
+
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/jaywcjlove/stylus-px2rem/graphs/contributors">
+  <img src="https://jaywcjlove.github.io/stylus-px2rem/CONTRIBUTORS.svg" />
+</a>
+
+Made with [contributors](https://github.com/jaywcjlove/github-action-contributors).
+
+
+## License
+
+MIT © [Kenny Wong](https://github.com/jaywcjlove)

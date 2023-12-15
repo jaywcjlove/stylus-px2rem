@@ -3,6 +3,8 @@
   "version": "1.0.14",
   "description": "Stylus convert px to rem in css files with optional fallback to px.",
   "main": "lib/px2rem.js",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
+  "homepage": "https://jaywcjlove.github.io/stylus-px2rem",
   "scripts": {
     "test": "mocha"
   },
