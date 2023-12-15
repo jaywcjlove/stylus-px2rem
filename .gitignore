@@ -7,6 +7,23 @@ gen
 # Logs
 logs
 *.log
-npm-debug.log*
 
 node_modules
+build
+coverage
+node_modules
+npm-debug.log*
+package-lock.json
+__snapshots__
+
+.eslintcache
+.DS_Store
+.cache
+.vscode
+
+*.bak
+*.tem
+*.temp
+#.swp
+*.*~
+~*.*
