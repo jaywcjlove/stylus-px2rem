@@ -3,7 +3,7 @@
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
 [![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/stylus-px2rem)
 [![](https://jaywcjlove.github.io/sb/ico/stylus.svg)](http://stylus-lang.com/)
-[![Build Status](https://travis-ci.org/ride-css/ride-css.svg)](https://github.com/jaywcjlove/stylus-px2rem)
+[![CI](https://github.com/jaywcjlove/stylus-px2rem/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/stylus-px2rem/actions/workflows/ci.yml)
 
 stylus convert px to rem in css files with optional fallback to px.
 
