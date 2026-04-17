@@ -1,8 +1,4 @@
-# These are supported funding model platforms
-
-# github: jaywcjlove
-# patreon: # Replace with a single Patreon username
-# open_collective: # Replace with a single Open Collective username
-# ko_fi: # Replace with a single Ko-fi username
-# tidelift: # npm/hotkeys-js
-custom: https://wangchujiang.com/#/sponsor
+github: [jaywcjlove]
+# ko_fi: jaywcjlove
+# buy_me_a_coffee: jaywcjlove
+# custom: ["https://wangchujiang.com/#/sponsor"]
